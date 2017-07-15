@@ -17,5 +17,13 @@ jQuery("#down").click(function () {
 });
 
 jQuery("#theteam").click(function () {
-    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 600);
+});
+
+jQuery("#email").click(function () {
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 900);
+});
+
+jQuery("#mobile").click(function () {
+    $('html,body').animate({scrollTop:$(this.hash).offset().top}, 900);
 });
