@@ -31,14 +31,14 @@
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
-#caption {
+.caption {
     margin: auto;
     display: block;
     width: 80%;
     max-width: 700px;
     text-align: center;
     color: #ccc;
-    padding: 10px 0;
+    padding: 20px;
     height: 150px;
 }
 
