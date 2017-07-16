@@ -24,7 +24,7 @@
 
 /* Modal Content (Image) */
 .modal-content {
-    margin: 25px;
+    margin: 0 auto;
     display: block;
     width: 38%;
     max-width: 500px;
