@@ -9,10 +9,12 @@ Written with love by Mihir Pathak
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 <link href="../layout/styles/layout.css" rel="stylesheet" type="text/css" media="all">
+<link href="../layout/styles/modal.css" rel="stylesheet" type="text/css" media="all">
 </head>
 <body id="top">
 
 <style>
+
   .fake-link {
       cursor: pointer;
   }
@@ -61,27 +63,49 @@ Written with love by Mihir Pathak
           <p>Note : We currently accept orders only via WhatsApp, Call and Instagram DM.</p>
           <br><br>
           <ul class="nospace clear">
-            <li class="one_quarter first"><span class="fake-link"><img src="../images/gallery/01.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/02.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/03.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/04.jpg" alt=""></span></li>
-            <li class="one_quarter first"><span class="fake-link"><img src="../images/gallery/05.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/06.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/07.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/08.jpg" alt=""></span></li>
-            <li class="one_quarter first"><span class="fake-link"><img src="../images/gallery/09.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/10.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/11.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/12.jpg" alt=""></span></li>
-            <li class="one_quarter first"><span class="fake-link"><img src="../images/gallery/13.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/14.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/15.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/16.jpg" alt=""></span></li>
-            <li class="one_quarter first"><span class="fake-link"><img src="../images/gallery/17.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/18.jpg" alt=""></span></li>
-            <li class="one_quarter"><span class="fake-link"><img src="../images/gallery/19.jpg" alt=""></span></li>
+            <li class="one_quarter first"><img class="myImg" src="../images/gallery/01.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/02.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/03.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/04.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter first"><img class="myImg" src="../images/gallery/05.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/06.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/07.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/08.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter first"><img class="myImg" src="../images/gallery/09.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/10.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/11.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/12.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter first"><img class="myImg" src="../images/gallery/13.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/14.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/15.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/16.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter first"><img class="myImg" src="../images/gallery/17.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/18.jpg" alt="" onclick="onClick(this)"></li>
+            <li class="one_quarter"><img class="myImg" src="../images/gallery/19.jpg" alt="" onclick="onClick(this)"></li>
           </ul>
         </figure>
+
+        <div id="myModal" class="modal">
+          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+          <img class="modal-content" id="img01">
+        </div>
+
+        <script>
+          function onClick(element) {
+          document.getElementById("img01").src = element.src;
+          document.getElementById("myModal").style.display = "block";
+        }
+        </script>
+
+
+<!--
+        <div id="myModal" class="modal">
+          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div> -->
+
+
         <br><br>
         <header class="heading">Or Print Your Own Ideas... (@ Just &#x20b9;99/- each)</header>
         <p>Send us your designs and we will print it for you!<p>
